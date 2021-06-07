@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Parotta King</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Great%20Vibes" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        function reviewOnlineOrder(name) {
+
+            var inputElements = document.getElementsByClassName('menuCheckbox');
+            var quantityElements = document.getElementsByClassName('quantity');
+            var total = 0;
+            var items = "";
+            for (var i = 0; inputElements[i]; ++i) {
+                if (inputElements[i].checked) {
+                    var itemCost = quantityElements[i].value * parseFloat(inputElements[i].value);
+                    items += inputElements[i].name + "..............." + quantityElements[i].value + "...............  $" + itemCost + "\n";
+                    total += itemCost;
+                }
+            }
+            alert(name + " your order will be ready in 20 minutes." + "\n" + items + "\n" + "Total Cost= ...............  $" + total);
+        }
+
+    </script>
+    <div class="wrapper">
+        <header class="top-container">
+
+            <section id="Home">
+                <h1 class="headerFontSize">Parotta King</h1>
+                <nav>
+                    <ul class="headerUL">
+                        <li class="headerLI">
+                            <a href="#Home">Home</a>
+                        </li>
+                        <li class="headerLI">
+                            <a href="#About">About</a>
+                        </li>
+                        <li class="headerLI">
+                            <a href="#Menu">Menu</a>
+                        </li>
+                        <li class="headerLI">
+                            <a href="#Order">Order Online</a>
+                        </li>
+                        <li class="headerLI">
+                            <a href="#Contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <h3> Best Indian parottas are available here</h3>
+            <video class="videoWidth" controls>
+                <source src="Video/Parotta_King.mp4" type="video/mp4">
+            </video>
+            <p>
+                Paratha/Parotta or <a href="https://en.wikipedia.org/wiki/Parotta">Porotta</a> is an Subcontinental
+                layered flatbread made from Maida or Atta, alternatively
+                known
+                as flaky ribbon pancake.
+            </p>
+        </header>
+        <section id="About" class="top-container">
+            <h2 class="headingcss">About Us</h2>
+            <p> We are recognized for our outstanding Indian cuisine, excellent service and friendly staff. Our Indian
+                restaurant is known for its famous parotta. We have branches all over the world.
+                Our menu is extensive & offers a wide variety of parotta choices.We also provides 10% Discount on first
+                order after registration. We also offer customized parotta options.
+                We hope you will continue to use our services and recommend it to all your friends.</p>
+        </section>
+        <form>
+            <section id="Menu" class="menu-container">
+                <h2 class="headingcss">Menu</h2>
+                <p class="headingcss">Please select the items to order</p>
+                <h3 class="headingcss">Entree</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="layeredParotta" value="10" /><b>Layered
+                                parotta
+                            </b><br />
+                            <label  >Quantity</label>
+                            <input type="number" class="quantity" name="layeredParotta" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/layeredParotta.jpg" alt="layered Parotta" /> Version of
+                                madurai parotta
+                                made
+                                into a bun
+                                size bake. </p>
+                            <p class="price">Price:$10.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="kothuParotta" value="15" /><b>Kothu
+                                parotta</b> <br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="kothuParotta" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/kothuParotta2.jpeg" alt="kothu Parotta" />Chopped
+                                parotta
+                                seasoned with
+                                vegetables and
+                                spices.</p>
+                            <p class="price">Price:$15.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="gheeParotta" value="12" /><b>Ghee
+                                parotta </b>
+                            <br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="gheeParotta" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/gheeParotta2.jpg" alt="ghee Parotta" />Layered parotta
+                                made with
+                                butter
+                                and
+                                Ghee.</p>
+                            <p class="price">Price:$12.00</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="veechuParotta" value="18" /><b>Veechu
+                                parotta</b>
+                            <br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="veechuParotta" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/veechuParotta.jpg" alt="veechu Parotta" />Chopped parotta
+                                seasoned
+                                with
+                                vegetables and
+                                spices.</p>
+                            <p class="price">Price:$18.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="chiliParotta" value="15" /><b>Chili
+                                parotta</b>
+                            <br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="chiliParotta" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/chiliParotta.jpg" alt="chili Parotta" />Chopped parotta
+                                after
+                                grilling
+                                in a
+                                pan, it is
+                                shallow fried in oil.</p>
+                            <p class="price">Price:$15.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="alooParotta" value="10" /><b>Aloo
+                                parotta</b>
+                            <br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="alooParotta" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/aloo2.jpg" alt="aloo Parotta" />Two layered parotta with
+                                potato
+                                stuffing
+                                in
+                                between.
+                            </p>
+                            <p class="price">Price:$10.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Closing Entree-->
+                <h3 class="headingcss">Starters</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="Samosa" value="5" /><b>Samosa</b> <br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="Samosa" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/samosa.jpg" alt="Samosa" />Potato Stuffed & Deep Fried.</p>
+                            <p class="price">Price:$5.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="Gobi65" value="8" /><b>Gobi 65</b><br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="Gobi65" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/gobi.jpg" alt="Gobi 65" />Fried cauliflower florets coated
+                                with
+                                spicy
+                                batter.</p>
+                            <p class="price">Price:$8.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="VadaPlate" value="5" /><b>Vada plate
+                            </b><br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="VadaPlate" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/vada.jpg" alt="Vada Plate" />Deep fried soaked dhal.Served
+                                with chutney</p>
+                            <p class="price">Price:$5.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="Bajji" value="4" /><b>Bajji</b> <br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="Bajji" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/bajji2.jpg" alt="Bajji" />Unriped banana cut into pieces and
+                                fried
+                                to
+                                add a
+                                crunch</p>
+                            <p class="price">Price:$4.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="OnionPakoda" value="5" /><b>Onion pakoda
+                            </b><br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="OnionPakoda" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/onionpakoda.jpg" alt="Onion Pakoda" />Deep fried besan
+                                marinated
+                                onion.
+                            </p>
+                            <p class="price">Price:$5.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="VegPakoda" value="7" /><b>Veg Pakoda</b>
+                            <br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="VegPakoda" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/vegpakoda.png" alt="Veg Pakoda" />Deep friend besan
+                                marinated
+                                veggies.
+                            </p>
+                            <p class="price">Price:$7.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Closing Starters-->
+                <h3 class="headingcss">Dessert</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="menuItem">
+
+                            <input class="menuCheckbox" type="checkbox" name="GulabJammun" value="6" /><b>Gulab
+                                Jammun</b>
+                            <br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="GulabJammun" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/Gulab-jamun-1.jpg" alt="Gulab Jammun" />Deep fried milk
+                                powder
+                                dipped in
+                                sugar syrub.
+                            </p>
+                            <p class="price">Price:$6.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="Kheer" value="5" /><b>Kheer</b><br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="Kheer" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/rice-kheer.jpg" alt="Kheer" />Cooked with milk,rice,butter
+                                and
+                                dried
+                                fruit.</p>
+                            <p class="price">Price:$5.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="Rasamalai"
+                                value="5" /><b>Rasamalai</b><br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="Rasamalai" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/rasamalai.jpg" alt="Rasamalai" />Bengali juicy Milk sweet.
+                                Made with milk.
+                            </p>
+                            <p class="price">Price:$5.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="Kesari" value="4" /><b>Kesari</b> <br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="Kesari" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/kesari.jpg" alt="Kesari" />Sojji fried in butter with milk
+                                and
+                                sugar.
+                            </p>
+                            <p class="price">Price:$4.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="CarrotHalwa" value="6" /><b>Carrot
+                                Halwa</b><br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="CarrotHalwa" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/carrothalwa.jpeg" alt="Carrot Halwa" />Shredded carrot
+                                cooked
+                                with
+                                milk
+                                and
+                                sugar.
+                            </p>
+                            <p class="price">Price:$6.00</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menuItem">
+                            <input class="menuCheckbox" type="checkbox" name="Milkpeda" value="3" /><b>Milk peda</b>
+                            <br />
+                            <label >Quantity</label>
+                            <input type="number" class="quantity" name="Milkpeda" min="1" max="10"><br><br>
+                            <p><img class="menu" src="image/peda1.jpg" alt="Milk peda" />Condensed milk sweet.</p>
+                            <p class="price">Price:$3.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Closing Dessert-->
+
+
+
+            </section>
+
+            <section id="Order" class="menu-container">
+
+                <h2>Order Online</h2>
+                <label>First Name: <input type="text" name="fName" /></label>
+                <label>Last Name: <input type="text" name="lName" /></label> <br> <br>
+                <label>Phone Number: <input type="tel" name="phone" /></label>
+                <label>Email: <input type="email" name="email" /></label>
+                <h3>Payment Option</h3>
+                <p><em>Please do not enter credit card information. Website is under development. Pay in person</em></p>
+                <label>Card Number: <input type="text" name="card" /></label> <br> <br>
+                <label>Name on Card: <input type="text" name="cName" /></label> <br> <br>
+                <label>Expiration Date: <input type="text" name="cardExp" placeholder="MMYY" /></label> <br> <br>
+                <input type="submit" name="order" value="Place an Order"
+                    onClick="reviewOnlineOrder(this.form.fName.value)" />
+            </section>
+        </form>
+        <footer id="Contact" class="top-container">
+
+            <h2>Contact Us</h2>
+            <p><b>Phone number:</b> 876-876-4567<br>
+                <b>Email:</b> parottaKing@gmail.com<br>
+                <b>Address:</b> 8765 ABC Street,San Diego,CA-92126
+            </p>
+            <fieldset>
+                <legend>Restaurant Hours</legend>
+                <p><b>Monday - Saturday:</b>11:30 AM - 02:30 PM | 05:30 PM - 09:30 PM <br>
+                    <b>Sunday:</b> 11:30 AM - 02:30 PM | 05:30 PM - 09:00 PM
+                </p>
+            </fieldset>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
