@@ -1,0 +1,180 @@
+body {
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../image/dark-wood.jpg");
+    background-position: center;
+}
+a{
+    color: darkgreen;
+}
+
+li.headerLI {
+    display: inline; 
+    margin-right: 10px;
+    font-size: smaller;
+}
+ul.headerUL{
+    margin-top: 25px;
+}
+
+h1{
+    font-family: "Great Vibes",cursive;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+h2{
+    font-family: "Great Vibes",cursive;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+h3{
+    font-family: "Great Vibes",cursive;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.top-container {
+    background-color: #EAF6F6;
+    
+    margin: 50px auto 50px auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    
+}
+.menuItem{
+    width:200px;
+}
+
+.headingcss{
+    text-align: center;
+}
+.menu-container {
+    background-color: #EAF6F6;
+   
+    padding: 20px;
+    font-weight: normal;
+}
+
+.price{
+    color: blue;
+}
+
+img.menu {
+    display: block;
+    text-align: left;
+    width: 200px;
+    height: 200px;
+   
+}
+
+.wrapper {
+    width: 90%;
+    margin: 20px auto 20px auto;
+    background-color: #ffffff;
+}
+
+video.videoWidth{
+   width:800px;
+}
+
+@media only screen and (max-width: 950px) {
+    video.videoWidth{
+        width:500px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width:400px;
+    }
+
+    video.videoWidth{
+        width:300px;
+    }
+
+    
+
+    nav li {
+        margin-right:15px;
+    }
+
+ }
+
+ * {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* Added outline to the rows to match the image*/
+.row {
+    outline: 16px solid white;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
